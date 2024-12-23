@@ -25,13 +25,22 @@
 
 body{
     background-color: var(--Grayish-Blue);
-    display: flex;
-    flex-flow: column wrap;
-    gap: 3rem;
-    align-items: center;
+    display: grid;
+    place-content: center;
 }
 
 main{
-    min-width: 805px;
+    width: 375px;
+    padding: 2rem;
+    margin-block: 5rem;
     background-color: white;
+}
+
+main > header{
+    width: 100%;
+    background-color: aqua;
+}
+
+main > header h1{
+    font-size: 1.5rem;
 }
